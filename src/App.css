@@ -3,3 +3,9 @@
 .font{
     font-family: "Lexend", sans-serif;
 }
+.banner-image{
+    background-image: url('../src/assets/banner.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:750px;
+}
