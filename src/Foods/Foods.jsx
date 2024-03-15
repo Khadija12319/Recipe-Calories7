@@ -1,19 +1,22 @@
+import { useEffect, useState } from "react";
+import Food from "../Food/Food";
+
 const Foods = () => {
+
+    const [foods , getFoods]= useState([]);
+
+    useEffect( () => {
+        fetch('recipes.json')
+        .then(res => res.json())
+        .then(data => getFoods(data));
+    },[]);
+
     return (
-        <div>
-            <div className="container mx-auto flex">
-                <div className="w-[60%]">
-                    <div className="card">
-                        <h3>hi i am khadija</h3>
-                    </div>
-                    <div></div>
-                </div>
-                <div className="w-[40%]">
-                    <h4>hi i am</h4>
-                </div>
-            </div>
+        <div className="md:w-[60%]">
+            <p>Foods : {foods.length}</p>
+            <Food food={foods}></Food>
         </div>
     );
-};
+}
 
 export default Foods;
