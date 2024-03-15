@@ -7,10 +7,10 @@ const Header = () => {
                 <h1 className="text-[#150B2B] text-[32px] font-bold">Recipe Calories</h1>
                 <div className="my-auto">
                     <ul className="flex gap-12 my-auto">
-                        <li className="text-[#150b2b] text-lg font-normal">Home</li>
-                        <li className="text-[#150b2b] text-lg font-normal">Recipes</li>
-                        <li className="text-[#150b2b] text-lg font-normal">About</li>
-                        <li className="text-[#150b2b] text-lg font-normal">Search</li>
+                        <li className="text-[#150b2b] text-lg font-normal"><a href="">Home</a></li>
+                        <li className="text-[#150b2b] text-lg font-normal"><a href="">Recipes</a></li>
+                        <li className="text-[#150b2b] text-lg font-normal"><a href="">About</a></li>
+                        <li className="text-[#150b2b] text-lg font-normal"><a href="">Search</a></li>
                     </ul>
                 </div>
                 <div className="flex gap-4">

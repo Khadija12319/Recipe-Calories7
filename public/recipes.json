@@ -1,0 +1,153 @@
+[
+    {
+      "recipe_image": "https://i.ibb.co/1nykQbs/chicken-curry.jpg",
+      "recipe_id": 1,
+      "recipe_name": "Chicken Curry",
+      "short_description": "A delicious and flavorful chicken curry dish.",
+      "ingredients": [
+        "550 g chicken",
+        "120 ml soy sauce",
+        "200 g basil leaves",
+        "400 g mushroom"
+      ],
+      "prep_time": 30,
+      "calories": 320
+    },
+    {
+      "recipe_image": "https://i.ibb.co/v3qNpbz/Spaghetti-Bolognese.jpg",
+      "recipe_id": 2,
+      "recipe_name": "Spaghetti Bolognese",
+      "short_description": "Classic Italian pasta dish with rich meat sauce.",
+      "ingredients": [
+        "400 g spaghetti",
+        "250 g ground beef",
+        "1 onion",
+        "2 cloves garlic",
+        "400 g canned tomatoes"
+      ],
+      "prep_time": 45,
+      "calories": 450
+    },
+    {
+      "recipe_image": "https://i.ibb.co/MNRvHkm/Vegetable-Soup.jpg",
+      "recipe_id": 3,
+      "recipe_name": "Vegetable Soup",
+      "short_description": "Healthy and hearty vegetable soup for any occasion.",
+      "ingredients": [
+        "2 carrots",
+        "2 celery stalks",
+        "1 onion",
+        "1 zucchini",
+        "1 can diced tomatoes"
+      ],
+      "prep_time": 35,
+      "calories": 180
+    },
+    {
+      "recipe_image": "https://i.ibb.co/VLyPV76/Grilled-Salmon.jpg",
+      "recipe_id": 4,
+      "recipe_name": "Grilled Salmon",
+      "short_description": "Delicious and nutritious grilled salmon fillet.",
+      "ingredients": [
+        "4 salmon fillets",
+        "2 tbsp olive oil",
+        "1 lemon",
+        "Salt and pepper to taste"
+      ],
+      "prep_time": 20,
+      "calories": 280
+    },
+    {
+        "recipe_image": "https://i.ibb.co/Z62nFFn/Chocolate-Cake.jpg",
+        "recipe_id": 5,
+        "recipe_name": "Chocolate Cake",
+        "short_description": "Decadent chocolate cake perfect for any celebration.",
+        "ingredients": [
+          "200 g flour",
+          "100 g cocoa powder",
+          "200 g sugar",
+          "150 g butter",
+          "3 eggs",
+          "1 tsp vanilla extract"
+        ],
+        "preo-time": 50,
+        "calories": 350
+    },
+    {
+      "recipe_image": "https://i.ibb.co/LZQ30cn/Greek-Salad.jpg",
+      "recipe_id": 6,
+      "recipe_name": "Greek Salad",
+      "short_description": "Refreshing salad with fresh vegetables and feta cheese.",
+      "ingredients": [
+        "2 tomatoes",
+        "1 cucumber",
+        "1 red onion",
+        "100 g feta cheese",
+        "Olives",
+        "Olive oil and vinegar for dressing"
+      ],
+      "prep_time": 15,
+      "calories": 160
+    },
+    {
+      "recipe_image": "https://i.ibb.co/Np63wjW/Lasagna.jpg",
+      "recipe_id": 7,
+      "recipe_name": "Lasagna",
+      "short_description": "Layers of pasta, meat sauce, and cheese baked to perfection.",
+      "ingredients": [
+        "9 lasagna noodles",
+        "500 g ground beef",
+        "2 cups marinara sauce",
+        "250 g ricotta cheese",
+        "1 cup shredded mozzarella cheese"
+      ],
+      "prep_time": 60,
+      "calories": 380
+    },
+    {
+      "recipe_image": "https://i.ibb.co/Hxfhpq1/Apple-Pie.jpg",
+      "recipe_id": 8,
+      "recipe_name": "Apple Pie",
+      "short_description": "Classic dessert made with tender apples and flaky crust.",
+      "ingredients": [
+        "6 apples",
+        "200 g sugar",
+        "100 g butter",
+        "1 tsp cinnamon",
+        "1 pie crust"
+      ],
+      "prep_time": 50,
+      "calories": 300
+    },
+    {
+      "recipe_image": "https://i.ibb.co/0ChhZqZ/Pancakes.jpg",
+      "recipe_id": 9,
+      "recipe_name": "Pancakes",
+      "short_description": "Fluffy pancakes served with maple syrup.",
+      "ingredients": [
+        "200 g flour",
+        "2 tbsp sugar",
+        "1 egg",
+        "200 ml milk",
+        "2 tsp baking powder"
+      ],
+      "prep_time": 25,
+      "calories": 220
+    },
+    {
+      "recipe_image": "https://i.ibb.co/GCDgZGz/smoothie.jpg",
+      "recipe_id": 10,
+      "recipe_name": "Fruit Smoothie",
+      "short_description": "Refreshing and healthy fruit smoothie.",
+      "ingredients": [
+        "1 banana",
+        "1 cup strawberries",
+        "1/2 cup blueberries",
+        "200 ml yogurt",
+        "Honey to taste"
+      ],
+      "prep_time": 10,
+      "calories": 150
+    }
+]
+  
