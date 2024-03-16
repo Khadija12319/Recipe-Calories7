@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { IoMdTime } from "react-icons/io";
 import { FaFire } from "react-icons/fa";
 
-const Food = ({food, handleOrders}) => {
+const Food = ({food, handleFoodClick}) => {
     const {recipe_image, recipe_name, short_description, prep_time, calories,ingredients} = food;
     return (
         <div className='p-6 border-[1px] rounded-3xl'>
@@ -21,7 +21,7 @@ const Food = ({food, handleOrders}) => {
            <p><span className='flex'><IoMdTime /> {prep_time} minutes</span></p>
            <p><span className='flex'><FaFire /> {calories} minutes</span></p>
            </div>
-           <button type="button" className='text-[#150B2B] bg-[#0BE58A] px-6 py-3 rounded-full' onClick={() => handleOrders(food)}>Want to Cook</button>
+           <button type="button" className='text-[#150B2B] bg-[#0BE58A] px-6 py-3 rounded-full' onClick={() => handleFoodClick(food)}>Want to Cook</button>
            
         </div>
     );
@@ -29,6 +29,6 @@ const Food = ({food, handleOrders}) => {
 
 Food.propTypes= {
     food : PropTypes.object.isRequired,
-    handleOrders: PropTypes.func.isRequired
+    handleFoodClick: PropTypes.func.isRequired
 }
 export default Food;

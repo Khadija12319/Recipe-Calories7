@@ -7,7 +7,7 @@ const Orders = ({orders}) => {
                 <h3>Want to cook: {orders.length}</h3>
                 <hr className="w-[350px] mx-auto" />
                 <div>
-                    <table>
+                    <table className='w-[100%] border-collapse'>
                         <thead>
                         <tr>
                             <th></th>
@@ -17,7 +17,7 @@ const Orders = ({orders}) => {
                             <th></th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody className=''>
                         {
                          orders.map((order, index) => <Order key={order.recipe_id} order={order} index={index}></Order>)
                         }

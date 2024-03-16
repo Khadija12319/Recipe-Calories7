@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 const Foods = ({handleOrders}) => {
 
     const [foods , getFoods]= useState([]);
+    const [clickedItems, setClickedItems] = useState([]);
+    
 
     useEffect( () => {
         fetch('recipes.json')
@@ -12,10 +14,17 @@ const Foods = ({handleOrders}) => {
         .then(data => getFoods(data));
     },[]);
 
+    const handleFoodClick = (food) => {
+        if (!clickedItems.includes(food.recipe_id)) {
+            setClickedItems([...clickedItems, food.recipe_id]);
+            handleOrders(food);
+        }
+    }; 
+
     return (
         <div className="md:w-[60%] grid md:grid-cols-2 gap-6">
             {
-                foods.map( food => <Food key={food.recipe_id} food={food} handleOrders={handleOrders}></Food>)
+                foods.map( food => <Food key={food.recipe_id} food={food} handleFoodClick={handleFoodClick}></Food>)
             }
         </div>
     );
