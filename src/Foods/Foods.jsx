@@ -12,9 +12,10 @@ const Foods = () => {
     },[]);
 
     return (
-        <div className="md:w-[60%]">
-            <p>Foods : {foods.length}</p>
-            <Food food={foods}></Food>
+        <div className="md:w-[60%] grid md:grid-cols-2 gap-6">
+            {
+                foods.map( food => <Food key={food.recipe_id} food={food}></Food>)
+            }
         </div>
     );
 }
