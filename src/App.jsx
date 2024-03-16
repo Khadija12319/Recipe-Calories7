@@ -14,13 +14,17 @@ function App() {
     setOrders(newFood);
   }
 
+  const handleUpdateOrders = (updatedOrders) => {
+    setOrders(updatedOrders);
+};
+
   return (
     <>
       <Header className='font'></Header>
       <Banner className='font'></Banner>
       <div className='md:flex container mx-auto'>
         <Foods handleOrders ={handleOrders}></Foods>
-        <Orders orders={orders}></Orders>
+        <Orders orders={orders} updateOrders={handleUpdateOrders}></Orders>
       </div>
     </>
   )
