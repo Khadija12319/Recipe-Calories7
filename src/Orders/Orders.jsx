@@ -25,17 +25,17 @@ const Orders = ({orders, updateOrders}) => {
     return (
         <div className="md:w-[40%] ml-6 border-[1px] p-6 rounded-3xl h-fit">
             <div className="text-center">
-                <h3>Want to cook: {orders.length}</h3>
+                <h3 className='text-[#282828] text-2xl font-semibold pb-4'>Want to cook: {orders.length}</h3>
                 <hr className="w-[350px] mx-auto" />
-                <div>
+                <div className='pt-6 pb-8'>
                     <table className='w-[100%] border-collapse'>
                         <thead>
                         <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Time</th>
-                            <th>Calories</th>
-                            <th></th>
+                            <th className='text-[#878787] font-medium text-base pb-4'></th>
+                            <th className='text-[#878787] font-medium text-base pb-4'>Name</th>
+                            <th className='text-[#878787] font-medium text-base pb-4'>Time</th>
+                            <th className='text-[#878787] font-medium text-base pb-4'>Calories</th>
+                            <th className='text-[#878787] font-medium text-base pb-4'></th>
                         </tr>
                         </thead>
                         <tbody className=''>
@@ -63,7 +63,7 @@ const Orders = ({orders, updateOrders}) => {
                         <tbody className=''>
                         {
                         prepare.map((prepitem,index) => (
-                                <tr key={prepitem.recipe_id}>
+                                <tr key={prepitem.recipe_id} className='bg-slate-100'>
                                     <td>{index +1}</td>
                                     <td>{prepitem.recipe_name}</td>
                                     <td>{prepitem.prep_time} minutes</td>
