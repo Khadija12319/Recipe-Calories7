@@ -6,8 +6,8 @@ import '../App.css'
 const Food = ({food, handleFoodClick}) => {
     const {recipe_image, recipe_name, short_description, prep_time, calories,ingredients} = food;
     return (
-        <div className='p-6 border-[1px] rounded-3xl font'>
-           <img src={recipe_image} alt="" className='h-[300px] w-full rounded-3xl' />
+        <div className='p-6 border-[1px] rounded-3xl font m-2 md:m-0'>
+           <img src={recipe_image} alt="" className='md:h-[300px] h-[250px] w-full rounded-3xl' />
            <h2 className='pt-6 text-[#282828] text-xl font-semibold'>{recipe_name}</h2>
            <p className='py-4 text-[16px] font-normal leading-8 text-[#878787]'>{short_description}</p>
            <hr></hr>

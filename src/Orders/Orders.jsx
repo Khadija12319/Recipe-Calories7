@@ -24,10 +24,10 @@ const Orders = ({orders, updateOrders}) => {
     };
 
     return (
-        <div className="md:w-[40%] ml-6 border-[1px] p-6 rounded-3xl h-fit font">
+        <div className="lg:w-[40%] md:w-[50%] m-2 md:m-0 md:ml-6 border-[1px] p-2 md:p-6 rounded-3xl h-fit font">
             <div className="text-center">
                 <h3 className='text-[#282828] text-2xl font-semibold pb-4'>Want to cook: {orders.length}</h3>
-                <hr className="w-[350px] mx-auto" />
+                <hr className="lg:w-[350px] mx-auto" />
                 <div className='pt-6 pb-8'>
                     <table className='w-[100%] border-collapse'>
                         <thead>
@@ -50,7 +50,7 @@ const Orders = ({orders, updateOrders}) => {
 
             <div className="text-center">
             <h3 className='text-[#282828] text-2xl font-semibold pb-4'>Currently cooking: {prepare.length}</h3>
-            <hr className="w-[350px] mx-auto" />
+            <hr className="lg:w-[350px] mx-auto" />
                 <div className='pt-6 pb-8'>
                     <table className='w-[100%] border-collapse'>
                         <thead>
@@ -65,10 +65,10 @@ const Orders = ({orders, updateOrders}) => {
                         {
                         prepare.map((prepitem,index) => (
                                 <tr key={prepitem.recipe_id} className='bg-slate-100'>
-                                    <td className='text-[#494646] font-normal leading-7 text-base py-5 pl-6'>{index +1}</td>
-                                    <td className='text-[#494646] font-normal leading-7 text-base py-5'>{prepitem.recipe_name}</td>
-                                    <td className='text-[#494646] font-normal leading-7 text-base py-5'>{prepitem.prep_time} minutes</td>
-                                    <td className='text-[#494646] font-normal leading-7 text-base py-5'>{prepitem.calories} calories</td>
+                                    <td className='text-[#494646] font-light md:font-normal leading-7 text-sm lg:text-base py-5 lg:pl-6'>{index +1}</td>
+                                    <td className='text-[#494646] font-light md:font-normal leading-7 text-sm lg:text-base py-5'>{prepitem.recipe_name}</td>
+                                    <td className='text-[#494646] font-light md:font-normal leading-7 text-sm lg:text-base py-5'>{prepitem.prep_time} minutes</td>
+                                    <td className='text-[#494646] font-light md:font-normal leading-7 text-sm lg:text-base py-5'>{prepitem.calories} calories</td>
                                 </tr>
                             ))
                         }

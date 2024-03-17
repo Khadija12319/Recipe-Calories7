@@ -38,7 +38,7 @@ const Foods = ({handleOrders}) => {
     return (
         <>
         <ToastContainer></ToastContainer>
-        <div className="md:w-[60%] grid md:grid-cols-2 gap-6">
+        <div className="lg:w-[60%] md:w-[50%] grid grid-cols-1 lg:grid-cols-2 gap-6">
             {
                 foods.map( food => <Food key={food.recipe_id} food={food} handleFoodClick={handleFoodClick}></Food>)
             }

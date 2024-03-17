@@ -16,8 +16,8 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <div className='text-center mb-12'>
-                <h3 className='text-[#150B2B] text-[40px] font-semibold pb-6'>Our Recipes</h3>
+            <div className='text-center mb-7 md:mb-12'>
+                <h3 className='text-[#150B2B] text-[30px] md:text-[40px] font-semibold pb-4 md:pb-6'>Our Recipes</h3>
                 <p className='text-[16px] font-normal leading-[28px] text-[#150b2b99]'>Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget<br></br> urna volutpat curabitur elementum mauris aenean neque. </p>
             </div>
         </div>
