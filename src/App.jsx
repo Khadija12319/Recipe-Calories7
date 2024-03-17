@@ -22,7 +22,7 @@ function App() {
     <>
       <Header className='font'></Header>
       <Banner className='font'></Banner>
-      <div className='md:flex container mx-auto'>
+      <div className='md:flex container mx-auto mb-3'>
         <Foods handleOrders ={handleOrders}></Foods>
         <Orders orders={orders} updateOrders={handleUpdateOrders}></Orders>
       </div>
