@@ -3,10 +3,10 @@ import '../App.css'
 const Header = () => {
     return (
         <div>
-            <div className="container mx-auto flex justify-between my-[50px] font">
-                <h1 className="text-[#150B2B] text-[32px] font-bold">Recipe Calories</h1>
+            <div className="container mx-auto flex flex-col md:flex-row justify-between my-[50px] font">
+                <h1 className="text-[#150B2B] text-[32px] font-bold text-center md:text-left">Recipe Calories</h1>
                 <div className="my-auto">
-                    <ul className="flex gap-12 my-auto">
+                    <ul className="flex md:gap-12 gap-6 my-auto">
                         <li className="text-[#150b2b] text-lg font-normal"><a href="">Home</a></li>
                         <li className="text-[#150b2b] text-lg font-normal"><a href="">Recipes</a></li>
                         <li className="text-[#150b2b] text-lg font-normal"><a href="">About</a></li>
