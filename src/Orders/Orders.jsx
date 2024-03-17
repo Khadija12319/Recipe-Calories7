@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import Order from '../Order/Order';
 import { useState } from 'react';
+import '../App.css'
 const Orders = ({orders, updateOrders}) => {
 
     const [prepare, setPrepare] = useState([]);
@@ -23,7 +24,7 @@ const Orders = ({orders, updateOrders}) => {
     };
 
     return (
-        <div className="md:w-[40%] ml-6 border-[1px] p-6 rounded-3xl h-fit">
+        <div className="md:w-[40%] ml-6 border-[1px] p-6 rounded-3xl h-fit font">
             <div className="text-center">
                 <h3 className='text-[#282828] text-2xl font-semibold pb-4'>Want to cook: {orders.length}</h3>
                 <hr className="w-[350px] mx-auto" />
@@ -48,35 +49,35 @@ const Orders = ({orders, updateOrders}) => {
             </div>
 
             <div className="text-center">
-            <h3>Currently cooking: {prepare.length}</h3>
+            <h3 className='text-[#282828] text-2xl font-semibold pb-4'>Currently cooking: {prepare.length}</h3>
             <hr className="w-[350px] mx-auto" />
-                <div>
+                <div className='pt-6 pb-8'>
                     <table className='w-[100%] border-collapse'>
                         <thead>
                         <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Time</th>
-                            <th>Calories</th>
+                            <th className='text-[#878787] font-medium text-base pb-4'></th>
+                            <th className='text-[#878787] font-medium text-base pb-4'>Name</th>
+                            <th className='text-[#878787] font-medium text-base pb-4'>Time</th>
+                            <th className='text-[#878787] font-medium text-base pb-4'>Calories</th>
                         </tr>
                         </thead>
                         <tbody className=''>
                         {
                         prepare.map((prepitem,index) => (
                                 <tr key={prepitem.recipe_id} className='bg-slate-100'>
-                                    <td>{index +1}</td>
-                                    <td>{prepitem.recipe_name}</td>
-                                    <td>{prepitem.prep_time} minutes</td>
-                                    <td>{prepitem.calories} calories</td>
+                                    <td className='text-[#494646] font-normal leading-7 text-base py-5 pl-6'>{index +1}</td>
+                                    <td className='text-[#494646] font-normal leading-7 text-base py-5'>{prepitem.recipe_name}</td>
+                                    <td className='text-[#494646] font-normal leading-7 text-base py-5'>{prepitem.prep_time} minutes</td>
+                                    <td className='text-[#494646] font-normal leading-7 text-base py-5'>{prepitem.calories} calories</td>
                                 </tr>
                             ))
                         }
                         <tr> 
                             <td></td>
                             <td></td>
-                            <td>Total Time = <br></br>
+                            <td className='pt-4 text-[#494646] leading-7 font-medium text-base'>Total Time = <br></br>
                                 {totalTime} minutes</td>
-                            <td>Total Calories = <br></br>
+                            <td className='pt-4 text-[#494646] leading-7 font-medium text-base'>Total Calories = <br></br>
                                 {totalCalories} calories</td>
                         </tr>
                         </tbody>
